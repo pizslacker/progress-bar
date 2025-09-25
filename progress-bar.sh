@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+BATCHSIZE=1
+
 progress-bar() {
 	local current=$1
 	local len=$2
