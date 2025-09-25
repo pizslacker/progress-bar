@@ -34,7 +34,7 @@ echo 'Finding files...'
 files=(./**/*cache)
 len=${#files[@]}
 
-echo 'Found $len files.'
+echo 'Found ${len} files.'
 for ((i = 0; i < len; i += BATCHSIZE)); do
 	progress-bar "$((i+1))" "$len"
 	process-files "${files[@]:i:BATCHSIZE}"
